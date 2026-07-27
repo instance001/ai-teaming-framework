@@ -34,6 +34,35 @@ Signal "good team" and you tend to get more considered, collaborative, context-a
 
 The framework is about learning those structural signals.
 
+## Interaction Loop
+
+```mermaid
+flowchart LR
+    defaultPull["AI default pull<br/>help fast + always answer"] --> shallow["Vending-machine pattern<br/>fast, fluent, often under-contextualized"]
+    userSignal["Human structural signals<br/>intent, constraints, output mode"] --> teaming["Good-team pattern<br/>collaborative, context-aware, checked"]
+
+    teaming --> discuss["Discuss before build<br/>goal + failure conditions"]
+    discuss --> constraints["Define boundaries<br/>must-do + must-not-do"]
+    constraints --> check["Check understanding<br/>reflect before execution"]
+    check --> execute["Execute one block<br/>produce the requested mode"]
+    execute --> nextStep{"Next step offered?"}
+    nextStep -->|yes| sequence["Trust useful sequence<br/>continue in recommended order"]
+    sequence --> execute
+    nextStep -->|no| checkpoint["Natural checkpoint<br/>review, resync, add context"]
+    checkpoint --> userSignal
+
+    execute --> feedback["Specific gratitude / correction<br/>mark what worked or failed"]
+    feedback --> teaming
+
+    classDef risk fill:#f3f0ea,stroke:#777,color:#333;
+    classDef signal fill:#eef7f2,stroke:#25624f,color:#14231d;
+    classDef loop fill:#fff8ec,stroke:#9b5b2e,color:#2a1b10;
+
+    class defaultPull,shallow risk;
+    class userSignal,feedback signal;
+    class teaming,discuss,constraints,check,execute,nextStep,sequence,checkpoint loop;
+```
+
 ---
 
 ## What It Covers
