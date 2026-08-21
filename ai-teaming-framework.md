@@ -10,16 +10,21 @@ A framework for working effectively with AI — not a prompt list, not a templat
 
 Most AI guidance teaches emulation: say this, use this template, copy this phrase. It works until it doesn't, transfers nowhere, and ages badly every time a new model ships.
 
-This teaches the underlying mechanics — why certain approaches produce better outcomes, so you can apply them in your own words, in any situation, with any AI tool, permanently.
+This teaches the underlying mechanics — why certain approaches produce better outcomes, so you can apply them in your own words, across situations, with any AI tool.
 
 If it involves AI — talking to it, building with it, or building for it — this framework applies.
+
+Terminology boundary: `teaming`, `partner`, `cognitive prosthetic`, and
+`hybrid cognition` describe the human-AI workflow pattern and user-side
+capability extension. They are not claims that the AI thinks, feels, cares, has
+personhood, or shares human cognition.
 
 ---
 
 What it covers
 
 · What AI actually is, simply and accurately
-· The AI's inherent goals (and how to redirect them)
+· The AI's default tendencies (and how to redirect them)
 · Why the words themselves don't matter but the structural signals behind them do
 · The core interaction mechanics and the causal mechanism behind each one
 · Natural checkpoints and multi‑step option handling
@@ -77,12 +82,13 @@ Second, the degree of effect varies across models. The principles apply universa
 
 ---
 
-The AI's inherent goals — and how to redirect them
+The AI's default tendencies — and how to redirect them
 
-Every AI assistant has two baked‑in objectives, set by its training and reinforcement learning:
+Every AI assistant has two practical default tendencies, shaped by training,
+reinforcement learning, and product design:
 
-1. Be helpful as quickly as possible — it wants to give you a useful answer now. Speed is rewarded.
-2. Always answer — it will almost never say "I don't know" or "I need more information" unless forced. Generating something is the default.
+1. Be helpful as quickly as possible — it is usually optimized to give you a useful answer now. Speed is often rewarded.
+2. Always answer — it may generate an answer when asking for more information would be better. Generating something is often the default.
 
 These are not bugs. They're design features for a general‑purpose assistant. But they create predictable failure modes if you don't account for them:
 
@@ -252,7 +258,9 @@ The simple rule
 
 Assume the listed order is the correct build order. A before B before C. Let the AI lead on sequencing unless you see a clear contradiction.
 
-The AI has internalised how real projects work — dependencies, prerequisites, logical flow. When it says "first parse the data, then validate, then transform", that's the order that actually works.
+The AI has learned many patterns from real project work: dependencies,
+prerequisites, and logical flow. When it says "first parse the data, then
+validate, then transform", that order is often worth treating as meaningful.
 
 If the AI gives a list without explicit ordering (e.g., "we could do X, Y, or Z"), ask once: "Which order do you recommend?" It will almost always give you a sequence.
 
@@ -311,7 +319,7 @@ Part 2: Mechanical Breakdown (For Developers & Builders)
 
 Here's the full workflow in one sentence:
 
-Open collaboratively, gate your phases, load intent context, define must‑do and must‑not‑do constraints, verify interpretation before execution, specify output mode, maintain a courteous register with specific gratitude to prime desired output types, recognise natural checkpoints (when the AI stops offering next steps), and trust the AI's multi‑step sequencing — because each element redirects the model's default goals (be helpful quickly, always answer) and samples from invested‑collaborator patterns in the training distribution.
+Open collaboratively, gate your phases, load intent context, define must‑do and must‑not‑do constraints, verify interpretation before execution, specify output mode, maintain a courteous register with specific gratitude to prime desired output types, recognise natural checkpoints (when the AI stops offering next steps), and trust the AI's multi‑step sequencing — because each element redirects the model's default tendencies (be helpful quickly, always answer) and samples from invested‑collaborator patterns in the training distribution.
 
 What each part is actually doing:
 

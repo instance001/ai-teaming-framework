@@ -14,6 +14,11 @@ Most AI guidance teaches emulation: say this, use this template, copy this phras
 
 This framework teaches why certain approaches produce better outcomes, so you can apply the principles in your own words, in any situation, with any AI tool.
 
+Terminology boundary: `teaming`, `partner`, `cognitive prosthetic`, and
+`hybrid cognition` describe the human-AI workflow pattern and user-side
+capability extension. They are not claims that the AI thinks, feels, cares, has
+personhood, or shares human cognition.
+
 If it involves AI, talking to it, building with it, or building for it, this framework applies with two important caveats.
 
 First, these principles operate within a model's current context window. Each new session starts fresh. Habits built here do not carry forward automatically, which is why building them as genuine habits rather than one-off techniques matters.
@@ -68,7 +73,7 @@ flowchart LR
 ## What It Covers
 
 - What AI actually is, simply and accurately
-- The AI's inherent goals, and how to redirect them
+- The AI's default tendencies, and how to redirect them
 - Why the exact words matter less than the structural signals behind them
 - The core interaction mechanics and the causal mechanism behind each one
 - How to discuss before building instead of rushing into output
@@ -129,7 +134,7 @@ Define constraints
 Include both what must happen and what must not happen.
 
 Check understanding before execution
-Ask the AI to reflect back what it thinks it is doing before it spends effort.
+Ask the AI to reflect back what it is planning to do before it spends effort.
 
 Specify output mode
 Say whether you need accuracy, brevity, a rough draft, a beginner explanation, production-ready code, or something else.
