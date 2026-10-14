@@ -32,3 +32,7 @@ GitHub API licence field at inventory time: `AGPL-3.0`. This is a metadata obser
 ## Evidence and limitations
 
 Evidence: authenticated GitHub API metadata captured by the FMI provenance audit. Contribution, prior art, ownership, contributors, document licensing, relationships, releases, and publication status require human verification.
+
+## Evidence-led lineage position
+
+The README frames this as a transferable human–AI collaboration skills framework: teaching interaction mechanics rather than model-specific prompt emulation. Treat it as a `SPECIFIED` educational framework with implementation-independent guidance. It explicitly disclaims claims of AI personhood or shared human cognition. It does not claim ownership of prompting, collaboration, instruction design, or general communication practice.
